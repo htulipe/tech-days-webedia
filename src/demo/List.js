@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 const MoviesList = ({ error, loading, movies }) => {
   if (error) {
-    return <div className="movies-list-state">An error occured</div>;
+    return <div className="movies-list-state">An error occurred</div>;
   }
   if (loading) {
     return <div className="movies-list-state">Loading...</div>;
   }
   if (!movies || !movies.length) {
-    return <div className="movies-list-state">No data</div>;
+    return <div className="movies-list-state">No data!</div>;
   }
   return (
     <ul className="movies-list">

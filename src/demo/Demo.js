@@ -40,17 +40,14 @@ class Demo extends Component {
           <MoviesList error={error} loading={loading} movies={movies} />
         </div>
         <div className="controls">
-          <button type="button" onClick={this.setNominalState.bind(this)}>
-            Nominal
-          </button>
           <button type="button" onClick={this.setLoadingState.bind(this)}>
             Loading
           </button>
-          <button type="button" onClick={this.setEmptyState.bind(this)}>
-            Empty
-          </button>
           <button type="button" onClick={this.setErrorState.bind(this)}>
             Error
+          </button>
+          <button type="button" onClick={this.setNominalState.bind(this)}>
+            Nominal
           </button>
         </div>
       </div>

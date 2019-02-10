@@ -1,25 +1,19 @@
 import React from 'react';
-import { ContentSlide } from 'react-presents';
-import Code from 'react-presents/dist/commonjs/Code';
-import Step from 'react-presents/dist/commonjs/Step';
+import { ContentSlide, Code, Step } from 'react-presents';
 
 const dimLines = {
-  0: [[0, 11]],
-  1: [[1, 10]],
-  2: [[4, 10]],
-  3: [[7, 10]],
-  4: [[10, 10]]
+  0: [[0, 8]],
+  1: [[1, 7]],
+  2: [[4, 7]],
+  3: [[7, 7]]
 };
 
-const code = `  const MoviesList = ({error, loading, movies}) => {
+const code = `  const MoviesList = ({ error, loading, movies }) => {
     if (error) {
       return <div>An error occurred</div>
     }
     if (loading) {
       return <div>Loading...</div>
-    }
-    if (!movies || !movies.length) {
-      return <div>No data!</div>;
     }
     return <ul>{movies.map(movie => <li>{movie.title}</li>)}</ul>
   }`;
@@ -33,11 +27,7 @@ export default ({ stepIndex }) => (
       codeMirrorOptions={{ lineNumbers: true }}
     />
     <br />
-    <Step index={6}>
-      Et maintenant si je veux rendre d'autres listes ? Des séries, des cinémas,
-      des utilisateurs...
-    </Step>
-    {[1, 2, 3, 4, 5].map(idx => (
+    {[1, 2, 3].map(idx => (
       <Step index={idx} maxIndex={idx + 1} key={idx}>
         <br />
       </Step>
