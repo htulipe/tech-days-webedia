@@ -1,6 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Presentation, Slide, TitleSlide, Step } from 'react-presents';
+import { Presentation, Slide, TitleSlide } from 'react-presents';
 import SlideDemo from './slides/SlideDemo';
 import SlideHoCSample from './slides/SlideHoCSample';
 import SlideReminderReact from './slides/SlideReminderReact';
@@ -16,10 +16,10 @@ const Prez = () => (
     <Slide
       component={() => (
         <TitleSlide>
-          <h1>Composer vos composants React</h1>
+          <h1>Composez vos composants React</h1>
           <h2>Une approche fonctionnelle de l'UI</h2>
           <br />
-          <em>Hadrien Tulipe - Equipe Allociné - Paris</em>
+          <em>Hadrien Tulipe - Equipe Allociné</em>
         </TitleSlide>
       )}
     />

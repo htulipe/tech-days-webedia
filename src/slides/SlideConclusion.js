@@ -40,15 +40,6 @@ export default () => (
       <Step index={10}>
         <li>C'est un paradigme qui est bon à connaître</li>
       </Step>
-      <Step index={11}>
-        <li>
-          Il est parfois mieux adapté que les autres paradigmes (prog
-          impérative, orienté objet)
-        </li>
-      </Step>
-      <Step index={12}>
-        <li>Parfois non</li>
-      </Step>
     </ul>
   </ContentSlide>
 );

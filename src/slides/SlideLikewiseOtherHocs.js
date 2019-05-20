@@ -35,7 +35,7 @@ export default () => (
         </li>
       </Step>
       <Step index={4}>
-        <li>Facilement testables unitairement</li>
+        <li>C'est bien mais...</li>
       </Step>
     </ul>
     <Step index={5}>

@@ -8,23 +8,23 @@ const dimLines = {
 };
 
 const hocHandleErrorCode = `  const handleError = (SomeComponent) => {
-    return ({ error, ...props }) => {
+    return ({ error, ...otherProps }) => {
         if (error) {
             return <div>An error occurred</div>
         }
-        return <SomeComponent {...props} />
+        return <SomeComponent {...otherProps} />
     }
   }`;
 
 export default ({ stepIndex }) => (
   <ContentSlide>
-    <h1>Simplifier le problème</h1>
+    <h1>Découper le problème</h1>
     <ul>
       <Step index={1}>
         <li>Si j'ai une erreur, rendre un message</li>
       </Step>
       <Step index={2}>
-        <li>Sinon rendre un composant</li>
+        <li>Sinon rendre quelque chose d'autre</li>
       </Step>
     </ul>
     <Step index={3}>
